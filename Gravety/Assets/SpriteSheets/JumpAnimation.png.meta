@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: e1f1c06c65a6dce478498eed1e7dadc5
+timeCreated: 1479418963
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JumpAnimation_0
+    21300002: JumpAnimation_1
+    21300004: JumpAnimation_2
+    21300006: JumpAnimation_3
+    21300008: JumpAnimation_4
+    21300010: JumpAnimation_5
+    21300012: JumpAnimation_6
+    21300014: JumpAnimation_7
+    21300016: JumpAnimation_8
+    21300018: JumpAnimation_9
+    21300020: JumpAnimation_10
+    21300022: JumpAnimation_11
+    21300024: JumpAnimation_12
+    21300026: JumpAnimation_13
+    21300028: JumpAnimation_14
+    21300030: JumpAnimation_15
+    21300032: JumpAnimation_16
+    21300034: JumpAnimation_17
+    21300036: JumpAnimation_18
+    21300038: JumpAnimation_19
+    21300040: JumpAnimation_20
+    21300042: JumpAnimation_21
+    21300044: JumpAnimation_22
+    21300046: JumpAnimation_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1167
+        width: 307
+        height: 881
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 307
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1167
+        width: 309
+        height: 881
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1167
+        width: 308
+        height: 881
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 285
+        width: 305
+        height: 883
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1167
+        width: 305
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 285
+        width: 304
+        height: 883
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1167
+        width: 304
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 285
+        width: 305
+        height: 883
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 1167
+        width: 302
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 1167
+        width: 302
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 285
+        width: 302
+        height: 883
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1167
+        width: 304
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 285
+        width: 301
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 1167
+        width: 300
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 2727
+        y: 1167
+        width: 305
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 285
+        width: 299
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 1167
+        width: 302
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 3323
+        y: 285
+        width: 298
+        height: 884
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 1167
+        width: 296
+        height: 881
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 285
+        width: 309
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 285
+        width: 307
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 285
+        width: 300
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 3027
+        y: 285
+        width: 296
+        height: 882
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
