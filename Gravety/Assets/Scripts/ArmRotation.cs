@@ -17,12 +17,7 @@ public class ArmRotation : MonoBehaviour {
         if (angle < 0) angle = 360 + angle;
 
         Vector4 limits = GlobalStats.currentStats.GetLimitAimAngle();
-        if (((angle <= limits.x && angle >= limits.z) || (angle >= limits.y && angle <= limits.w)) && GlobalStats.currentStats.jugador.transform.localScale.x > 0)
-        {
-            GlobalStats.currentStats.SetMaxAngleReached(false);
-            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + rotationOffset);
-        }
-        else if(GlobalStats.currentStats.jugador.transform.localScale.x < 0 && ((rotZ > 90 && rotZ < 180) || (rotZ < -90f && rotZ > -180f)))
+        if (((angle <= limits.x && angle >= limits.z) || (angle >= limits.y && angle <= limits.w)))
         {
             GlobalStats.currentStats.SetMaxAngleReached(false);
             transform.rotation = Quaternion.Euler(0f, 0f, rotZ + rotationOffset);
@@ -31,7 +26,7 @@ public class ArmRotation : MonoBehaviour {
         {
             GlobalStats.currentStats.SetMaxAngleReached(true);
         }
-        GlobalStats.currentStats.SetCurrentArmRotation(rotZ);
-        print(new Vector2(GlobalStats.currentStats.jugador.transform.localScale.x, GlobalStats.currentStats.jugador.transform.localScale.y));
+        GlobalStats.currentStats.SetCurrentArmRotation(transform.rotation.z);
+        print(transform.rotation.z);
 	}
 }

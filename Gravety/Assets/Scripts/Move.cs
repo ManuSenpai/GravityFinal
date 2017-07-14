@@ -44,7 +44,8 @@ public class Move : MonoBehaviour {
                 QuecoRig.velocity = new Vector2(speed, QuecoRig.velocity.y);
                 if (gravitacional.abajo) isFacingRight = false;
                 else isFacingRight = true;
-			}
+                GlobalStats.currentStats.SetLimitAimAngle(new Vector4(90, 270, 0, 359));
+            }
             if (gravitacional.abajo)
                 this.gameObject.transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
             else if (gravitacional.arriba)
@@ -57,7 +58,8 @@ public class Move : MonoBehaviour {
                 QuecoRig.velocity = new Vector2(-speed, QuecoRig.velocity.y);
                 if (gravitacional.abajo) isFacingRight = true;
                 else isFacingRight = false;
-			}
+                GlobalStats.currentStats.SetLimitAimAngle(new Vector4(270, 90, 180, 179));
+            }
             if (gravitacional.abajo)
                 this.gameObject.transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
             else if (gravitacional.arriba)
@@ -70,7 +72,8 @@ public class Move : MonoBehaviour {
                 QuecoRig.velocity = new Vector2(QuecoRig.velocity.x, speed);
                 if (gravitacional.der) isFacingRight = false;
                 else isFacingRight = true;
-			}
+                GlobalStats.currentStats.SetLimitAimAngle(new Vector4(180, 0, 90, 89));
+            }
             if (gravitacional.izq)
                 this.gameObject.transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
             else if (gravitacional.der)
@@ -83,7 +86,8 @@ public class Move : MonoBehaviour {
                 QuecoRig.velocity = new Vector2(QuecoRig.velocity.x, -speed);
                 if (gravitacional.izq) isFacingRight = false;
                 else isFacingRight = true;
-			}
+                GlobalStats.currentStats.SetLimitAimAngle(new Vector4(360, 180, 270, 269));
+            }
             if (gravitacional.der)
                 this.gameObject.transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
             else if (gravitacional.izq)

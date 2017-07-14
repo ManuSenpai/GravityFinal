@@ -127,7 +127,10 @@ public class Fire : MonoBehaviour {
         }
         else
         {
-            if (GlobalStats.currentStats.GetCurrentArmRotation() > 0) direccion = Vector3.up;
+            float rotacion = GlobalStats.currentStats.GetCurrentArmRotation();
+            if (rotacion > 0.95 && rotacion < 1.05) direccion = Vector3.up;
+            else if (rotacion > 0.65 && rotacion < 0.75) direccion = Vector3.right;
+            else if (rotacion < -0.65 && rotacion > -0.75) direccion = Vector3.left;
             else direccion = Vector3.down;
         }
 
@@ -152,7 +155,6 @@ public class Fire : MonoBehaviour {
                 Debug.Log(col.gameObject.tag);
                 PrefabManager.currentPrefabs.newt.GetComponent<Fire>().loaded = true;
                 Destroy(this.gameObject);
-                //Debug.Log("LOADED es " + loaded);
             }
         }
 		else if (col.gameObject.tag == "Objeto" || col.gameObject.tag == "Enemy" || col.gameObject.tag == "Enemy2" || col.gameObject.tag == "Puerta")
