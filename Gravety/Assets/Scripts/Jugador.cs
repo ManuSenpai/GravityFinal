@@ -51,7 +51,6 @@ public class Jugador : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         PrefabManager.currentPrefabs.HUD_barra_vida.GetComponent<RectTransform>().sizeDelta = new Vector2(GlobalStats.currentStats.player_current_health * 2, PrefabManager.currentPrefabs.HUD_barra_vida.GetComponent<RectTransform>().sizeDelta.y);
-        PrefabManager.currentPrefabs.HUD_texto_nails.text = GlobalStats.currentStats.player_nails.ToString();
         PrefabManager.currentPrefabs.HUD_texto_nivel.text = GlobalStats.currentStats.player_level.ToString();
         PrefabManager.currentPrefabs.HUD_texto_vida.text = GlobalStats.currentStats.player_current_health.ToString() + " / " + GlobalStats.currentStats.player_max_health;
     }

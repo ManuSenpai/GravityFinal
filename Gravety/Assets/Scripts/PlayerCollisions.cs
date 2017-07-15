@@ -22,14 +22,6 @@ public class PlayerCollisions : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        // Recogemos clavos del suelo y aumentamos el contador de clavos disponibles.
-        if (col.gameObject.tag == "Nails")
-        {
-            sonido = col.gameObject.GetComponent<AudioSource>();
-            sonido.Play();
-            GlobalStats.currentStats.player_nails += 20;
-            col.gameObject.transform.localScale = new Vector2(0, 0);
-        }
 
 		if (col.gameObject.tag == "DamageTrap")
 		{

@@ -15,6 +15,8 @@ public class Fire : MonoBehaviour {
     private float velBola;
     private float velClavo;
     private GameObject newtGrabbed;
+    private static float mediumCharge = 1.5f;
+    private static float fullCharge = 4f;
 
 	// Use this for initialization
 	void Start () {
@@ -72,16 +74,13 @@ public class Fire : MonoBehaviour {
             PrefabManager.currentPrefabs.newt.transform.localScale = Vector2.zero;
             if (Input.GetMouseButtonDown(0))
             {
-                if (GlobalStats.currentStats.player_nails > 0)
-                {
-                    GameObject clavo = (GameObject) Instantiate(PrefabManager.currentPrefabs.clavo, Queco.transform.localPosition, Quaternion.identity);
-                    clavo.transform.localScale = new Vector2(10f, 10f);
-                    Rigidbody2D clavoRB = clavo.GetComponent<Rigidbody2D>();
-                    //clavoRB.transform.position = new Vector2(Queco.transform.position.x, Queco.transform.position.y);
-                    clavoRB.transform.position = new Vector2(PrefabManager.currentPrefabs.puntoDisparo.transform.position.x, PrefabManager.currentPrefabs.puntoDisparo.transform.position.y);
-                    transform.rotation = Quaternion.identity;
-                    dispararClavo(clavoRB, velClavo);
-                }
+                GameObject clavo = (GameObject) Instantiate(PrefabManager.currentPrefabs.clavo, Queco.transform.localPosition, Quaternion.identity);
+                clavo.transform.localScale = new Vector2(10f, 10f);
+                Rigidbody2D clavoRB = clavo.GetComponent<Rigidbody2D>();
+                //clavoRB.transform.position = new Vector2(Queco.transform.position.x, Queco.transform.position.y);
+                clavoRB.transform.position = new Vector2(PrefabManager.currentPrefabs.puntoDisparo.transform.position.x, PrefabManager.currentPrefabs.puntoDisparo.transform.position.y);
+                transform.rotation = Quaternion.identity;
+                dispararClavo(clavoRB, velClavo);
             }
         }
         // Disparo principal con pistola de clavos.
@@ -140,8 +139,6 @@ public class Fire : MonoBehaviour {
             proyectil.velocity = transform.TransformDirection(new Vector2(-direccion.x, direccion.y) * velocidad);
         else
             proyectil.velocity = transform.TransformDirection(new Vector2(direccion.x, direccion.y) * velocidad);
-
-        GlobalStats.currentStats.player_nails--;
         //proyectil.AddForce(direccion * velocidad, ForceMode2D.Impulse);
     }
 

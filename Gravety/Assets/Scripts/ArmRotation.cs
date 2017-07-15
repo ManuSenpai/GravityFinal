@@ -27,6 +27,5 @@ public class ArmRotation : MonoBehaviour {
             GlobalStats.currentStats.SetMaxAngleReached(true);
         }
         GlobalStats.currentStats.SetCurrentArmRotation(transform.rotation.z);
-        print(transform.rotation.z);
 	}
 }

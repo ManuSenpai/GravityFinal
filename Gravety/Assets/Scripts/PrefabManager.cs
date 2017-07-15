@@ -13,7 +13,6 @@ public class PrefabManager : MonoBehaviour
     public GameObject sideNewt;
     public GameObject mochilaLlena;
     public GameObject mochilaVacia;
-    public GameObject idleEloise;
     public GameObject puntoDisparo;
     public GameObject puntoNewt;
 	public GameObject brazoDisparo;
@@ -21,7 +20,6 @@ public class PrefabManager : MonoBehaviour
 
     public Text HUD_texto_vida;
     public Text HUD_texto_nivel;
-    public Text HUD_texto_nails;
     public GameObject HUD_barra_vida;
     public GameObject HUD_barra_vida_punta;
     public GameObject HUD_barra_vida_fondo;
@@ -30,11 +28,31 @@ public class PrefabManager : MonoBehaviour
 	public GameObject trail;
 	public GameObject esferaExp;
 
+    private GameObject jugador;
+    private GameObject HUD;
     // Use this for initialization
 
 	void Awake()
 	{
-		Cursor.visible = false;
+        jugador = GameObject.FindGameObjectWithTag("Player");
+        HUD = GameObject.FindGameObjectWithTag("HUD");
+        newt = jugador.transform.FindChild("newt").gameObject;
+        mochilaLlena = jugador.transform.FindChild("mochila").gameObject;
+        mochilaVacia = jugador.transform.FindChild("mochila-vacia").gameObject;
+        brazoDisparo = jugador.transform.FindChild("Hombro").gameObject.transform.FindChild("brazoPistola").gameObject;
+        puntoDisparo = brazoDisparo.transform.FindChild("PuntoDisparo").gameObject;
+        puntoNewt = brazoDisparo.transform.FindChild("PuntoNewt").gameObject;
+        newtAgarrado = jugador.transform.FindChild("newtCogido").gameObject;
+        HUD_texto_vida = HUD.transform.FindChild("textoVida").GetComponent<Text>();
+        HUD_texto_nivel = HUD.transform.FindChild("Nivel").GetComponent<Text>();
+        HUD_barra_vida = HUD.transform.FindChild("Vida").gameObject;
+        HUD_barra_vida_punta = HUD.transform.FindChild("HUD_BARRA_DER").gameObject;
+        HUD_barra_vida_fondo = HUD.transform.FindChild("Fondo").gameObject;
+        HUD_barra_exp = HUD.transform.FindChild("Exp_Barra").gameObject;
+        HUD_barra_exp_fondo = HUD.transform.FindChild("Exp_Fondo").gameObject;
+        esferaExp = HUD.transform.FindChild("Circle").gameObject;
+
+        Cursor.visible = false;
 		if (currentPrefabs == null)
 		{
 			currentPrefabs = this;

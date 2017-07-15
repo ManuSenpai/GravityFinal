@@ -114,7 +114,6 @@
     <Compile Include="Assets\Scripts\SceneChange.cs" />
     <Compile Include="Assets\Scripts\SetAwakeLocation.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
-    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Scripts\enemyBulletDestroy.cs" />
     <Compile Include="Assets\Scripts\infoText.cs" />
   </ItemGroup>

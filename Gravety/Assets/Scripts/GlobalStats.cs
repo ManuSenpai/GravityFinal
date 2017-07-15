@@ -11,7 +11,6 @@ public class GlobalStats : MonoBehaviour {
     public int player_current_health;
     public int player_max_health;
     public int player_level;
-    public int player_nails;
     public int player_current_exp;
     public int player_exp_next_level;
     public int critic_rate;
@@ -34,6 +33,7 @@ public class GlobalStats : MonoBehaviour {
     // Use this for initialization
     void Awake()
 	{
+        if (jugador == null) jugador = GameObject.FindGameObjectWithTag("Player");
         limitAimAngle = new Vector4(90, 270, 0, 359);
         maxAngleReached = false;
         newtIsFired = false;
@@ -108,7 +108,6 @@ public class GlobalStats : MonoBehaviour {
         player_current_health = 180;
         player_max_health = 180;
         player_level = 1;
-        player_nails = 60;
         player_current_exp = 0;
         player_exp_next_level = 10;
         critic_rate = 90;
